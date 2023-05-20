@@ -33,6 +33,8 @@
     #00000010,
     #00000080
   );
+  --main-color: linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -83,6 +85,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -96,12 +99,155 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+.emailinput{
+  display:inline !important;
+
+}
+.passwordinput{
+  display: inline !important;
+}
+.lastnameinput{
+  display: inline-block !important;
+  width:45% !important;
+}
+.firstnameinput{
+  display:inline-block !important;
+  width:45% !important;
+  
+}
+.main-section{
+  background-image:var(--main-color) !important;
+}
+.brand{
+  text-decoration: none ;
+}
+.nav-list{
+  cursor: pointer;
+}
+.main-section-button{
+  background: #fff;
+  border: 1px solid transparent;
+  color: #222;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 50px;
+  transition: .6s;
+}
+.main-section-button:hover{
+  background-color: transparent ;
+  border-color: white !important;
+  color:white;
+}
+.booktitle{
+  font-size: 4rem;
+}
+@media (max-width: 990px){
+  .container{
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+  }
+}
+.section-gap{
+  padding:5rem 0 !important;
+}
+.second-section-button{
+  background: #E08E6D;
+  border: 1px solid #E08E6D;
+  color: #222;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 50px;
+  transition: .6s;
+  width: 30%;
+}
+.second-section-button:hover{
+  background-color: transparent ;
+  border-color: black !important;
+  color:black;
+}
+.underline-effect {
+  position: relative;
+}
+.underline-effect::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: grey;
+}
+.card-text,.card-header{
+  transition: 0.6s;
+}
+.price-tag{
+  font-size: 4rem !important;
+}
+.third-section-button{
+  background: #E08E6D;
+  border: 1px solid #E08E6D;
+  color: #222;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 50px;
+  transition: .6s;
+}
+.card-text:hover{
+  background-color: #E08E6D !important;
+}
+.card-text:hover .third-section-button{
+  border-color: black!important;
+  background-color: white !important;
+}
+.forth-section{
+  background-image:var(--main-color) !important;
+}
+.logo-buttons{
+  padding: 1rem 1.5rem 0px 1.5rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  transition: 0.6s;
+  background-color: #fff;
+  color: #222;
+  cursor: pointer;
+}
+.icon{
+  font-size: 3rem !important;
+}
+.logo-buttons:hover{
+  background-color: transparent !important;
+  border-color: white;
+  color:white;
+}
+.main-container{
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.container-1{
+  position: absolute;
+  background: linear-gradient(90deg, #2282d1, #0d47a1) !important;
+  color: #ffffff !important;
+}
+.container-2{
+  position: absolute;
+}
+.trial-section{
+  background-image: var(--main-color);
 }
